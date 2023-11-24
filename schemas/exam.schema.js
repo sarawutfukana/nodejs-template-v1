@@ -6,7 +6,6 @@ async function getAll() {
 
 async function getById(id) {
   const exams = await ExamModel.getAll();
-  console.log(id);
   return exams.find((exam) => exam.id === id);
 }
 
